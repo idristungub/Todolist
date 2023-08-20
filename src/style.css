@@ -1,0 +1,48 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #cfcfcd;
+  position: relative;
+}
+
+/* Positioning the title */
+.top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* font family for text */
+h2 {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* search box */
+.search-container {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  box-shadow: ;
+  justify-content: space-between;
+  margin: 10px 100px;
+  padding: 10px;
+}
+
+.search-box {
+  font-size: 25px;
+  margin-left: 50px;
+  outline: none;
+}
+
+.right-nav {
+  display: flex;
+  margin-right: 20px;
+  gap: 50px;
+  align-items: center;
+}
+
+/* buttons */
+
+.search-btn {
+}
