@@ -1,9 +1,9 @@
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #cfcfcd;
-  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
 }
 
 /* Positioning the title */
@@ -14,35 +14,117 @@ body {
 }
 
 /* font family for text */
-h2 {
+h2,
+p,
+span {
   font-family: "Roboto Mono", monospace;
 }
 
 /* search box */
-.search-container {
+
+.dashed-container {
   display: flex;
   flex-direction: row;
-  border: solid;
-  box-shadow: ;
+  border: dashed #a8a8a8;
+  border-radius: 10px;
   justify-content: space-between;
+  align-items: center;
   margin: 10px 100px;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
-.search-box {
+input {
+  font-family: "Roboto Mono", monospace;
+}
+
+.search-calender-container {
+  display: flex;
+}
+
+.task-box {
   font-size: 25px;
   margin-left: 50px;
+  border: none;
   outline: none;
 }
 
-.right-nav {
-  display: flex;
-  margin-right: 20px;
-  gap: 50px;
-  align-items: center;
+/* buttons */
+/* show the hover effect here */
+.calender-container :hover {
+  border: 1px;
+  background: #d4d4d4;
+  color: black;
+  border-radius: 6px;
+  padding: 7px;
+  text-decoration: none;
 }
 
-/* buttons */
+.plus-container ::before {
+  border: 1px;
+  background: #d4d4d4;
+  color: black;
+  border-radius: 42px;
+  padding: 7px;
+  text-decoration: none;
+}
 
-.search-btn {
+a {
+  color: #000000;
+}
+
+a :hover {
+  color: #d4d4d4;
+}
+
+/* add container  */
+
+.add-container {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px 100px;
+  padding: 10px 20px;
+}
+
+.timelapse-generator {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.btns {
+  display: flex;
+  gap: 15px;
+}
+
+/* task submitted container */
+
+.add-pomodoro-list {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 100px;
+  padding: 10px 20px;
+}
+
+.add-pomodoro-list-child1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-pomodoro-list-child2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.checkbox {
+  color: #d4d4d4;
+}
+
+.checkbox :hover {
+  color: #000000;
 }

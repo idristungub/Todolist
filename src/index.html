@@ -27,18 +27,37 @@
 
     <!-- title -->
     <div class="top-container">
-      <h2>TodoList</h2>
+      <h2>PomodoList</h2>
     </div>
+    <!-- tasks box, calender and add -->
 
-    <!-- search bar -->
-    <div class="search-container">
-      <input class="search-box" placeholder="Add new .." type="text" />
-      <div class="right-nav">
-        <i class="bi bi-calendar3" style="font-size: 25px"></i>
-        <button class="search-btn">Add</button>
+    <div class="main-container">
+      <div class="dashed-container">
+        <div class="search-calender-container">
+          <a href="" class="calender-container"
+            ><i class="bi bi-calendar3" style="font-size: 40px"></i>
+          </a>
+          <input
+            class="task-box"
+            placeholder="Add new.."
+            type="text"
+            size="50"
+          />
+        </div>
+
+        <a
+          href=""
+          id="plus-container"
+          class="plus-container"
+          onclick="addTodoOnClick(event)"
+        >
+          <i class="bi bi-plus-lg" style="font-size: 40px"></i
+        ></a>
       </div>
+
+      <div id="task-container"></div>
     </div>
   </body>
-
-  <script src="main.js"></script>
+  <script src="./main.js"></script>
+  <script type="module" src="Task.js"></script>
 </html>
