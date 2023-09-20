@@ -12,14 +12,14 @@
 // when button pressed text value put into console
 let noOfPomodoro = 0;
 const mainContainer = document.querySelector("#task-container");
-const textInput = document.querySelector(".task-box");
+export let textInput = document.querySelector(".task-box");
 let plusButton = document.querySelector(".plus-container");
+
 // add eventlistener on keyup and click
 
 // add eventlistener onclick action takes place producing addContainer
-function addTodoOnClick(event) {
-  event.preventDefault();
-
+export function addTodoOnClick(e) {
+  e.preventDefault();
   const value = textInput.value;
   // only variables are allowed inside html from javascript
   let addContainer = `<div class="add-container">
@@ -50,11 +50,7 @@ function addTodoOnClick(event) {
 
   if (value === "") {
     console.log("nothing");
-    delete addContainer;
-  } else {
-    addContainer;
-
-    // no need for return in event listeners
+    return; // no need for return in event listeners
   }
 }
 
